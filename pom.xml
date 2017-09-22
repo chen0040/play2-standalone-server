@@ -105,6 +105,16 @@
         <commons-math.version>3.2</commons-math.version>
 
         <lombok.version>1.16.6</lombok.version>
+
+        <!-- Akka -->
+        <akka.version>2.3.14</akka.version>
+
+        <!-- Scala -->
+        <scala.binary.version>2.10</scala.binary.version>
+        <scala.lib.version>2.10.6</scala.lib.version>
+
+        <play.version>2.4.8</play.version>
+        <play.akka.version>2.3.13</play.akka.version>
     </properties>
 
     <profiles>
@@ -452,7 +462,39 @@
             <version>${commons-lang3.version}</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.typesafe.play/play_2.10 -->
+        <dependency>
+            <groupId>com.typesafe.play</groupId>
+            <artifactId>play-java_${scala.binary.version}</artifactId>
+            <version>${play.version}</version>
+        </dependency>
 
+
+        <!-- https://mvnrepository.com/artifact/com.typesafe.play/play_2.10 -->
+        <dependency>
+            <groupId>com.typesafe.play</groupId>
+            <artifactId>play-server_${scala.binary.version}</artifactId>
+            <version>${play.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.typesafe.play</groupId>
+            <artifactId>play-netty-server_${scala.binary.version}</artifactId>
+            <version>${play.version}</version>
+        </dependency>
+
+        <dependency>
+            <artifactId>akka-remote_${scala.binary.version}</artifactId>
+            <groupId>com.typesafe.akka</groupId>
+            <version>${play.akka.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-testkit_${scala.binary.version}</artifactId>
+            <version>${akka.version}</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
@@ -513,7 +555,7 @@
                             <transformers>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.github.chen0040.bootslingshot.SpringSlingshotApplication</mainClass>
+                                    <mainClass>com.github.chen0040.play2.AkkaPlayApp</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
