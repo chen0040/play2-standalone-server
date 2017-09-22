@@ -1,4 +1,4 @@
-package com.github.chen0040.play2;
+package com.github.chen0040.play2.controllers;
 
 
 import akka.actor.ActorSystem;

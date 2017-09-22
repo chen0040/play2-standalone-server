@@ -1,7 +1,6 @@
-package com.github.chen0040.play2;
+package com.github.chen0040.play2.actors;
 
 
-import akka.actor.ActorRef;
 import akka.actor.Props;
 import akka.actor.UntypedActor;
 import akka.event.Logging;

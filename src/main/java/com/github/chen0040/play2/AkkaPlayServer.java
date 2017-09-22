@@ -3,11 +3,13 @@ package com.github.chen0040.play2;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
+import com.github.chen0040.play2.actors.CommandActor;
+import com.github.chen0040.play2.controllers.CommandController;
+import com.github.chen0040.play2.controllers.SettingController;
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.slf4j.MDC;
 import play.Mode;
 import play.server.Server;
 

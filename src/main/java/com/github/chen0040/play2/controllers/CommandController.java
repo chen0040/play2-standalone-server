@@ -1,4 +1,4 @@
-package com.github.chen0040.play2;
+package com.github.chen0040.play2.controllers;
 
 
 import akka.actor.ActorRef;
@@ -6,8 +6,6 @@ import play.Logger;
 import play.libs.F;
 import play.mvc.Controller;
 import play.mvc.Result;
-
-import java.util.List;
 
 import static akka.pattern.Patterns.ask;
 
