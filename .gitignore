@@ -1,6 +1,10 @@
 # Compiled class file
 *.class
 
+.idea/
+*.iml
+target/
+
 # Log file
 *.log
 
@@ -11,10 +15,8 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.ear
-*.zip
 *.tar.gz
 *.rar
 
